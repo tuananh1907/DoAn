@@ -50,7 +50,7 @@ $current_page = isset($_GET['p']) ? $_GET['p'] : 1;
                                 Xóa/Sửa
                             </th>
                             <th>
-                                Hiện
+                                Trạng thái
                             </th>
                             <th scope="col">
                                 Tên Sản Phẩm

@@ -51,15 +51,15 @@ $current_page = isset($_GET['p']) ? $_GET['p'] : 1;
                                 Xóa/Sửa
                             </th>
                             <th>
-                                Hiện
+                                Trạng thái
                             </th>
                             <th scope="col">
-                                Username
+                                Tên tài khoản
                             </th>
 
 
                             <th scope="col">
-                                Fullname
+                                Tên đầy đủ
                             </th>
 
                             <th scope="col">

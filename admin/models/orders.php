@@ -25,3 +25,33 @@ function pages() {
     $count = countOrders();
     return ceil($count/$range);
 }
+
+function getOrders()
+{
+    global $conn;
+    $id = $_GET['id'];
+    if (isset($_GET['id'])) {
+        $value = $conn->prepare('select * from orders where id = :id');
+        $value->bindValue('id', $id);
+        $value->execute();
+        $value = $value->fetch(PDO::FETCH_OBJ);
+        return $value;
+    }
+}
+
+function updateOrders() {
+    global $conn;
+    $id = $_GET['id'];
+    if ( isset($_POST['save']) ) {
+       if(!empty($_POST['name'])) {
+           $ord = $conn->prepare('update orders set name = :name, status = :status where id = :id');
+           $ord->bindValue('name', $_POST['name']);
+           $ord->bindValue('status', $_POST['status']);
+           $ord->bindValue('id', $id);
+           $ord->execute();
+           $_SESSION['success'] = 'Cập nhật đơn hàng thành công';
+           redirect('/admin?mod=orders');
+       }
+    }
+
+}

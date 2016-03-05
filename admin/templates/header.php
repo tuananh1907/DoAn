@@ -57,28 +57,28 @@
 <!--                    <li><a href="msg.html">Response Messages</a></li>-->
 <!--                </ul>-->
 <!--            </li>-->
-            <li><a href="/admin/?mod=category">Category</a>
+            <li><a href="/admin/?mod=category">Danh Mục</a>
                 <ul>
-                    <li><a href="/admin/?mod=category&action=add">Add Category</a></li>
+                    <li><a href="/admin/?mod=category&action=add">Thêm Danh mục</a></li>
 
                 </ul>
             </li>
-            <li><a href="/admin/?mod=product">Product</a>
+            <li><a href="/admin/?mod=product">Sản phẩm</a>
                 <ul>
-                    <li><a href="/admin/?mod=product&action=add">Add Product</a> </li>
+                    <li><a href="/admin/?mod=product&action=add">Thêm sản phẩm</a> </li>
 
                 </ul>
             </li>
-            <li><a href="/admin/?mod=account">Account</a>
+            <li><a href="/admin/?mod=account">Tài khoản</a>
 <!--                <ul>-->
 <!--                    <li><a href="/admin/?mod=account&action=add">Add Account</a> </li>-->
 <!---->
 <!--                </ul>-->
             </li>
 
-            <li><a href="/admin/?mod=orders">Orders</a>
+            <li><a href="/admin/?mod=orders">Đơn đặt hàng</a>
                 <ul>
-                    <li><a href="/admin/?mod=ordersdetail">OrdersDetail</a>
+                    <li><a href="/admin/?mod=ordersdetail">Chi tiết đơn hàng</a>
                 </ul>
             </li>
 
