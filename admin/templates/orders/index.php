@@ -46,7 +46,6 @@ $current_page = isset($_GET['p']) ? $_GET['p'] : 1;
                     </tr>
                     <?php
                     while ($ord = $order->fetch(PDO::FETCH_OBJ)) {
-_pr($ord);
 
                         ?>
                         <tr class="">

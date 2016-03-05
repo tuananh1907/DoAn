@@ -5,7 +5,7 @@ function getAll() {
     $range = RANGE;
     $offset = ($current_page - 1)*$range ;
     global $conn;
-    $ord = $conn->prepare('select * from orders left join account on orders.username = account.username order by id desc limit :range offset :offset');
+    $ord = $conn->prepare('select orders.*, account.username from orders left join account on orders.username = account.username order by id desc limit :range offset :offset');
     $ord->bindValue('range', $range, PDO::PARAM_INT);
     $ord->bindValue('offset', $offset, PDO::PARAM_INT);
     $ord->execute();

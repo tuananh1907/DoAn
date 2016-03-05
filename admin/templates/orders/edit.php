@@ -1,6 +1,5 @@
 <?php
 $ord = getOrders();
-_pr($ord);
 updateOrders();
 ?>
 <form action="" method="post">
